@@ -1,0 +1,10 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="64" height="64" rx="16" fill="#2A56FF"/>
+  
+  <!-- Shield Outline Icon -->
+  <path
+    d="M32 10L16 16V29.5C16 41.1 22.9 51.7 32 54C41.1 51.7 48 41.1 48 29.5V16L32 10ZM32 50C25 47.9 20 39.7 20 29.5V18.7L32 14.3L44 18.7V29.5C44 39.7 39 47.9 32 50Z"
+    fill="white"
+  />
+</svg>
