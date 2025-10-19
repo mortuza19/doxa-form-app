@@ -67,7 +67,7 @@ function Header({ demoRef, featureRef, pricingRef, contactRef, scrollToSection }
       <Toolbar sx={{ justifyContent: "space-between", py: 1 }}>
         {/* Logo */}
         <Box display="flex" alignItems="center" gap={2}>
-          <img src="/assets/logo.svg" alt={t("Doxa logo")}
+          <img src="assets/logo.svg" alt={t("Doxa logo")}
           style={{ height: 36 }} />
           <Typography variant="h6" component="div" sx={{ fontWeight: 700 }}>
             {t("Doxa Form")}

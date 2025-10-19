@@ -5,6 +5,7 @@ import path from 'path'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: "/doxa-form-app/",
   resolve: {
     alias: {
       '@pages': path.resolve(__dirname, 'src/pages'),
