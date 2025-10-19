@@ -46,11 +46,31 @@ function Header({ demoRef, featureRef, pricingRef, contactRef, scrollToSection }
   };
 
   const menuItems = [
-    t("Feature"),
-    t("Demo"),
-    t("Pricing"),
-    t("Contact"),
-    t("Login"),
+    {
+      section: 'feature',
+      ref: featureRef,
+      label: t("Feature"),
+    },
+    {
+      section: 'demo',
+      ref: demoRef,
+      label: t("Demo"),
+    },
+    {
+      section: 'pricing',
+      ref: pricingRef,
+      label: t("Pricing"),
+    },
+    {
+      section: 'contact',
+      ref: contactRef,
+      label: t("Contact"),
+    },
+    {
+      section: 'login',
+      ref: null,
+      label: t("Login"),
+    }
   ];
 
   return (
@@ -119,8 +139,11 @@ function Header({ demoRef, featureRef, pricingRef, contactRef, scrollToSection }
           transformOrigin={{ vertical: "top", horizontal: "right" }}
         >
           {menuItems.map((item) => (
-            <MenuItem key={item} onClick={handleMenuClose}>
-              {item}
+            <MenuItem key={item.section} onClick={() => {
+              scrollToSection(item.ref!);
+              handleMenuClose();
+            }}>
+              {item.label}
             </MenuItem>
           ))}
           <MenuItem>
